@@ -4,14 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to bottom, #ff9e80, #ff6e7f, #b565d9);
+    background: linear-gradient(to bottom, peach, pinkish red, lavender purple);
     background-attachment: fixed;
     color: #2b2b2b;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, coral orange, warm sand);
     color: white;
     text-align: center;
     padding: 25px;
@@ -78,19 +78,19 @@ form {
 /* Form Interactivity */
 input, textarea {
     padding: 10px;
-    border: 2px solid #ffcbb8;
+    border: 2px solid light peach;
     border-radius: 6px;
     transition: border-color 0.4s ease, background-color 0.4s ease;
 }
 
 input:focus, textarea:focus {
-    border-color: #ff6e7f;
-    background-color: #fff2f5;
+    border-color: coral rose;
+    background-color: soft blush;
 }
 
 /* Submit Button */
 input[type="submit"] {
-    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    background: linear-gradient(to right, rose pink, bubblegum pink);
     color: white;
     cursor: pointer;
     border: none;
@@ -118,7 +118,7 @@ input[type="submit"]:hover {
 footer {
     text-align: center;
     padding: 15px;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, coral orange, warm sand);
     color: white;
 }
 
