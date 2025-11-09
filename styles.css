@@ -4,19 +4,14 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background: linear-gradient(to bottom, peach, pinkish red, lavender purple);
-    background-attachment: fixed;
-    color:charcoal gray;
 }
 
 /* Header */
 header {
-    background: linear-gradient(to right, coral orange, warm sand);
+    background: #3a6ea5;
     color: white;
     text-align: center;
-    padding: 25px;
-    font-size: 1.8em;
-    font-weight: bold;
+    padding: 20px;
 }
 
 /* Navigation */
@@ -24,24 +19,21 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
-    background: rgba(0, 0, 0, 0.3);
+    background: #26547c;
     margin: 0;
     padding: 10px;
-    backdrop-filter: blur(8px);
 }
 
 nav a {
     color: white;
-    padding: 10px 25px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 6px;
-    transition: background-color 0.4s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
 /* Hover effect */
 nav a:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    background-color: #4ea7e0;
 }
 
 /* Blog Layout (Flexbox) */
@@ -49,76 +41,54 @@ nav a:hover {
     display: flex;
     gap: 20px;
     padding: 20px;
-    flex-wrap: wrap;
 }
 
 .blog-post {
-    background: white;
-    border-radius: 10px;
-    padding: 20px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 15px;
     flex: 1;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 /* Contact Section */
 .contact-section {
-    padding: 25px;
-    background: rgba(255,255,255,0.5);
-    border-radius: 10px;
-    margin: 20px;
-    backdrop-filter: blur(6px);
+    padding: 20px;
+    background: #e8eef3;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 /* Form Interactivity */
 input, textarea {
-    padding: 10px;
-    border: 2px solid light peach;
-    border-radius: 6px;
-    transition: border-color 0.4s ease, background-color 0.4s ease;
+    padding: 8px;
+    border: 2px solid #cccccc;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 input:focus, textarea:focus {
-    border-color: coral rose;
-    background-color: soft blush;
-}
-
-/* Submit Button */
-input[type="submit"] {
-    background: linear-gradient(to right, rose pink, bubblegum pink);
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 6px;
-    padding: 12px;
-    font-weight: bold;
-    transition: transform 0.3s ease;
-}
-
-input[type="submit"]:hover {
-    transform: scale(1.05);
+    border-color: #3a6ea5;
+    background-color: #eef6ff;
 }
 
 /* Fade-in Animation */
 .fade-in {
-    animation: fadeIn 2s ease-in forwards;
+    animation: fadeIn 1.5s ease-in forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(15px); }
-    to { opacity: 1; transform: translateY(0); }
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background: linear-gradient(to right, coral orange, warm sand);
+    background-color: #3a6ea5;
     color: white;
 }
 
@@ -133,6 +103,10 @@ footer {
 
 /* Tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
+    .blog-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
     .blog-post {
         flex: 100%;
     }
